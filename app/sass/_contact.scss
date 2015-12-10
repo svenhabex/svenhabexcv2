@@ -1,0 +1,52 @@
+footer{
+	background: url(../assets/img/hero1.jpg) no-repeat center center fixed;
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	z-index: 1;
+	padding: 50px 0px;
+
+
+	.overlay-footer{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		background: rgba(0, 0, 0, 0.91);
+		z-index:0;
+	}
+
+	.contact-item{
+	margin-top: 20px;
+	font-size: 120%;
+	font-weight: 300;
+	margin-left: 15%;
+	transition: all 0.2s ease-in-out;
+	padding: 10px 5px;
+	color: white;
+	display: block;
+
+		&:hover{
+			color: $red;
+			text-decoration: none;
+			color: $red;
+		}
+
+		&:visited{
+			text-decoration: none;
+		}
+
+		p{
+			position: absolute;
+			display: inline;
+			margin-top: 2px;
+		}
+
+		i{
+			margin-right: 20px;
+		}
+	}
+}
+

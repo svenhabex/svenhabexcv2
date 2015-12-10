@@ -1,0 +1,107 @@
+.hero{
+	position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../assets/img/hero1.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    .overlay{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .logo{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: url(../assets/img/logoSH.png) no-repeat center center;
+        background-size: cover;
+        top: 27%;
+        left: 50%;
+        margin-left: -60px;
+        border: 2px solid $red;
+        border-radius: 50%;
+    }
+
+    .hero-text{
+    	position: absolute;
+    	color: white;
+    	top: 50%;
+    	left: 50%;
+    	margin-left: -168px;
+    	text-align: center;
+
+    	h1{
+    		font-weight: 400;
+    		font-size: 400%;
+    		margin: 0px;
+    	}
+
+    	hr{
+    		margin: 10px 0px 5px 0px;
+    	}
+
+    	h3{
+    		margin: 0px;
+    		font-weight: 100;
+    		font-size: 200%;
+    	}
+    }
+
+    .fadein-up{
+        animation-name: fade-up;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.8s;
+    }
+
+    .fadein-down{
+        animation-name: fade-down;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes fade-up {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+}
+
+/* .zoom{
+    animation-name: zoom-hero;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes zoom-hero {
+    0% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+    }
+} */

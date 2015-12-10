@@ -1,0 +1,48 @@
+#skills{
+	.row{
+		margin-bottom: 50px;
+	}
+
+	h3{
+		margin-left: 15px;
+		margin-bottom: 30px;
+	}
+
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.skill-title{
+			width: 50%;
+			float: left;
+		}
+
+		.skill-stars{
+			width: 50%;
+			i{
+				margin-left: 2px;
+			}
+		}
+
+		li{
+			margin-bottom: 0px;
+			transition: all 0.1s ease-in-out;
+			padding: 15px 5px;
+
+			&:hover{
+				transform: scale(1.065);
+			}
+		}
+	}
+
+	.full-star{
+		color: $red;
+
+		
+	}
+
+	.empty-star{
+		color: #cbcbcb;
+	}
+}

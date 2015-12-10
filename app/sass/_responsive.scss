@@ -1,0 +1,62 @@
+$small: 991px;
+$extra-small: 767px;
+
+//tablets
+@media screen and (max-width: $small) {
+	
+	.profile-info{
+		text-align: center;
+
+		.about{
+			margin-bottom: 40px;
+		}
+
+		.profielfoto{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+//phones
+@media screen and (max-width: $extra-small) {
+
+	.content{
+		margin-bottom: 170px !important;
+	}
+
+	.hero{
+		.hero-text{
+			margin-left: -127px;
+
+			h1{
+				font-size: 300%;
+			}
+		}
+	}
+
+	.timeline{
+		display: none;
+	}
+
+	#skills{
+		text-align: center;
+	}
+
+	.contact-item{
+		p{
+			display: none !important;
+		}
+	}
+
+}
+
+//custom
+@media screen and (max-width: 350px) {
+	
+	#skills{
+		.section-title{
+			font-size: 290%;
+		}
+	}
+
+}

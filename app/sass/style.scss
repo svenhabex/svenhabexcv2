@@ -1,0 +1,18 @@
+@import "./bootstrap-sass-3.3.5/assets/stylesheets/bootstrap";
+
+@import "settings";
+@import "hero";
+@import "section";
+@import "profile";
+@import "experience";
+@import "skills";
+@import "contact";
+@import "responsive";
+
+.content{
+	background: white;
+	margin-bottom: 230px;
+	position: relative;
+	z-index: 4;
+}
+
